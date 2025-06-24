@@ -3,182 +3,142 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OG Trading Lab - Learn Strategies</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet"/>
+  <title>OG Trading Lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Orbitron', sans-serif;
-    }
-
     body {
-      background-color: #0a0a0a;
-      color: #f1c40f;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: #facc15;
     }
-
     header {
-      background-color: #111;
-      padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #333;
+      padding: 20px 40px;
+      background-color: #1a1a1a;
+      border-bottom: 2px solid #facc15;
     }
-
-    header h1 {
-      font-size: 1.5rem;
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      color: #facc15;
     }
-
     nav a {
-      color: #f1c40f;
-      margin-left: 1.5rem;
+      color: #facc15;
+      margin-left: 20px;
       text-decoration: none;
-      transition: 0.3s;
+      font-weight: 600;
     }
-
-    nav a:hover {
-      color: #fff;
-    }
-
     .hero {
-      background-image: url('images/hero-bg.jpg');
+      background-image: url('hero-bg.jpg');
       background-size: cover;
       background-position: center;
-      height: 80vh;
+      height: 85vh;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      flex-direction: column;
       text-align: center;
-      padding: 2rem;
+      padding: 20px;
     }
-
-    .hero h2 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      color: #fff;
-      text-shadow: 2px 2px 10px #000;
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 800;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 12px;
     }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: #f1c40f;
-      margin-bottom: 2rem;
-    }
-
-    .hero a {
-      background-color: #f1c40f;
-      color: #000;
-      padding: 0.8rem 1.5rem;
-      text-decoration: none;
-      border-radius: 5px;
+    .hero button {
+      margin-top: 20px;
+      padding: 15px 30px;
+      background-color: #facc15;
+      border: none;
+      color: #0d0d0d;
+      font-size: 18px;
       font-weight: bold;
+      cursor: pointer;
+      border-radius: 8px;
       transition: 0.3s;
     }
-
-    .hero a:hover {
-      background-color: #fff;
+    .hero button:hover {
+      background-color: #ffe45e;
     }
-
-    .courses {
+    .course-section {
+      padding: 60px 40px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      padding: 3rem 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
     }
-
     .course-card {
       background-color: #1a1a1a;
-      border: 1px solid #333;
-      border-radius: 10px;
+      border: 2px solid #333;
+      border-radius: 12px;
       overflow: hidden;
-      transition: transform 0.3s ease;
+      transition: 0.3s;
     }
-
     .course-card:hover {
-      transform: translateY(-5px);
+      border-color: #facc15;
+      transform: scale(1.03);
     }
-
     .course-card img {
       width: 100%;
-      height: 180px;
+      height: 200px;
       object-fit: cover;
     }
-
-    .course-content {
-      padding: 1.5rem;
+    .course-card .content {
+      padding: 20px;
     }
-
-    .course-content h3 {
-      margin-bottom: 0.8rem;
-      color: #fff;
+    .course-card h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 10px;
     }
-
-    .course-content p {
-      font-size: 0.95rem;
-      color: #ccc;
-      margin-bottom: 1rem;
+    .course-card p {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #d4d4d4;
     }
-
-    .course-content a {
-      color: #f1c40f;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
     footer {
       text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      border-top: 1px solid #333;
-      background-color: #111;
+      padding: 30px;
+      border-top: 2px solid #facc15;
+      font-size: 14px;
+      background-color: #1a1a1a;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>OG Trading Lab</h1>
+    <div class="logo">OG Trading Lab</div>
     <nav>
       <a href="#">Home</a>
-      <a href="#courses">Courses</a>
-      <a href="#contact">Contact</a>
+      <a href="#">Courses</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>Master the Markets</h2>
-    <p>Learn powerful trading strategies from experts</p>
-    <a href="#courses">Explore Courses</a>
+    <h1>Master the Market with Pro Strategies</h1>
+    <button>Get Started</button>
   </section>
 
-  <section id="courses" class="courses">
+  <section class="course-section">
     <div class="course-card">
-      <img src="images/nifty-scalping.png" alt="Nifty Scalping">
-      <div class="course-content">
-        <h3>Nifty Scalping Strategy</h3>
-        <p>Fast-paced strategy tailored for intraday Nifty traders using price action & volume confluence.</p>
-        <a href="#">View Course</a>
+      <img src="nifty scalping.png" alt="Nifty Scalping">
+      <div class="content">
+        <h2>Nifty Scalping Strategy</h2>
+        <p>High-frequency trades on Nifty using multi-timeframe confluence, momentum filters, and risk-managed scalps.</p>
       </div>
     </div>
-
     <div class="course-card">
-      <img src="images/crypto-scalping.png" alt="Crypto Scalping">
-      <div class="course-content">
-        <h3>Crypto Scalping</h3>
-        <p>Ride quick market swings in crypto with momentum and breakout-based techniques.</p>
-        <a href="#">View Course</a>
-      </div>
-    </div>
-
-    <div class="course-card">
-      <img src="images/price-action.png" alt="Price Action">
-      <div class="course-content">
-        <h3>Price Action Mastery</h3>
-        <p>Build a rock-solid foundation in price action patterns, structure, and decision making.</p>
-        <a href="#">View Course</a>
+      <img src="crypto scalping.png" alt="Crypto Scalping">
+      <div class="content">
+        <h2>Crypto Scalping Strategy</h2>
+        <p>Learn advanced crypto scalping setups using breakout and liquidity traps. Ideal for volatile coin pairs.</p>
       </div>
     </div>
   </section>
