@@ -2,46 +2,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OG Trading Lab - Course Portal</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-        header { background: #1f2937; color: white; padding: 20px; text-align: center; }
-        nav { background: #374151; padding: 10px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; }
-        section { padding: 20px; }
-        .course { background: white; margin: 20px auto; padding: 15px; max-width: 800px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        footer { background: #1f2937; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OG Trading Lab</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f172a;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1e293b;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid #334155;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #facc15;
+    }
+
+    header p {
+      color: #cbd5e1;
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: #1e293b;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      border-bottom: 1px solid #334155;
+    }
+
+    nav a {
+      color: #f8fafc;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #facc15;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .course {
+      background-color: #1e293b;
+      margin-bottom: 30px;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      border-left: 5px solid #facc15;
+    }
+
+    .course h2 {
+      color: #facc15;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    .course p {
+      color: #cbd5e1;
+      font-size: 1em;
+    }
+
+    footer {
+      background-color: #1e293b;
+      color: #94a3b8;
+      text-align: center;
+      padding: 15px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      border-top: 1px solid #334155;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>OG Trading Lab</h1>
-        <p>Learn to trade like a pro with Omkar Gawate</p>
-    </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Courses</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
-    <section>
-        <div class="course">
-            <h2>Beginner Trading Course</h2>
-            <p>Learn the basics of stock, forex, and crypto trading using structured lessons and real examples.</p>
-        </div>
-        <div class="course">
-            <h2>Price Action Mastery</h2>
-            <p>Master the art of price action with chart patterns, liquidity zones, and candle psychology.</p>
-        </div>
-        <div class="course">
-            <h2>Options Trading Strategy (Nifty / Bank Nifty)</h2>
-            <p>Learn how to trade options using the ProZone LiquiSweep Strategy built by Omkar Gawate.</p>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2025 OG Trading Lab. All rights reserved.</p>
-    </footer>
+  <header>
+    <h1>OG Trading Lab</h1>
+    <p>Omkar Gawate's Premium Trading Course Portal</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="courses">
+    <div class="course">
+      <h2>Beginner Trading Course</h2>
+      <p>Start your journey with basics of trading in Stocks, Forex, and Crypto markets. Perfect for beginners who want structured learning.</p>
+    </div>
+
+    <div class="course">
+      <h2>Price Action Mastery</h2>
+      <p>Level up your trading with price action, liquidity sweeps, chart patterns, and candle psychology to predict smart moves.</p>
+    </div>
+
+    <div class="course">
+      <h2>Options Strategy: Nifty & Bank Nifty</h2>
+      <p>Dominate the market using ProZone LiquiSweep Strategy designed by Omkar Gawate for intraday option buying and scalping.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 OG Trading Lab. Built by Omkar Gawate. All rights reserved.</p>
+  </footer>
 </body>
 </html>
