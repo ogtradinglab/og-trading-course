@@ -1,132 +1,131 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OG Trading Lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0f172a;
-      color: white;
-      line-height: 1.6;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: #fcd535;
     }
-
     header {
-      background-color: #1e293b;
-      padding: 30px 20px;
-      text-align: center;
-      border-bottom: 1px solid #334155;
-    }
-
-    header h1 {
-      font-size: 2.5em;
-      color: #facc15;
-    }
-
-    header p {
-      color: #cbd5e1;
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-
-    nav {
-      background-color: #1e293b;
       display: flex;
-      justify-content: center;
-      padding: 15px 0;
-      border-bottom: 1px solid #334155;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #111;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
-
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
     nav a {
-      color: #f8fafc;
-      margin: 0 20px;
+      color: #fcd535;
+      margin-left: 1.5rem;
       text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 2rem;
+      background-image: url('https://cdn.pixabay.com/photo/2016/12/28/09/36/chart-1934906_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      height: 80vh;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin: 0 0 1rem 0;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 500px;
+    }
+    .cta-button {
+      background-color: #fcd535;
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      border: none;
       font-weight: bold;
-      transition: color 0.3s;
+      font-size: 1rem;
+      margin-top: 1.5rem;
+      cursor: pointer;
+      border-radius: 4px;
     }
-
-    nav a:hover {
-      color: #facc15;
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
     }
-
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+    .course-card {
+      background-color: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
     }
-
-    .course {
-      background-color: #1e293b;
-      margin-bottom: 30px;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-      border-left: 5px solid #facc15;
+    .course-card:hover {
+      transform: scale(1.05);
     }
-
-    .course h2 {
-      color: #facc15;
-      font-size: 1.8em;
-      margin-bottom: 10px;
+    .course-card h3 {
+      margin-top: 0;
+      color: #fcd535;
     }
-
-    .course p {
-      color: #cbd5e1;
-      font-size: 1em;
+    .course-card p {
+      color: #ddd;
     }
-
     footer {
-      background-color: #1e293b;
-      color: #94a3b8;
       text-align: center;
-      padding: 15px 0;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-      border-top: 1px solid #334155;
+      padding: 1rem;
+      background-color: #111;
+      color: #888;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>OG Trading Lab</h1>
-    <p>Omkar Gawate's Premium Trading Course Portal</p>
+    <nav>
+      <a href="#courses">Courses</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#courses">Courses</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="courses">
-    <div class="course">
-      <h2>Beginner Trading Course</h2>
-      <p>Start your journey with basics of trading in Stocks, Forex, and Crypto markets. Perfect for beginners who want structured learning.</p>
+  <section class="hero">
+    <div>
+      <h2>Master Trading with Live Signals</h2>
+      <p>Learn option trading, forex, crypto, and scalping strategies from experts using real-time candle analysis and buy/sell signals.</p>
+      <button class="cta-button">Explore Courses</button>
     </div>
+  </section>
 
-    <div class="course">
-      <h2>Price Action Mastery</h2>
-      <p>Level up your trading with price action, liquidity sweeps, chart patterns, and candle psychology to predict smart moves.</p>
+  <section class="courses" id="courses">
+    <div class="course-card">
+      <h3>Nifty Option Buying Strategy</h3>
+      <p>Includes live signals, 7 confirmations, risk management, and indicator setup.</p>
     </div>
-
-    <div class="course">
-      <h2>Options Strategy: Nifty & Bank Nifty</h2>
-      <p>Dominate the market using ProZone LiquiSweep Strategy designed by Omkar Gawate for intraday option buying and scalping.</p>
+    <div class="course-card">
+      <h3>Forex Scalping Masterclass</h3>
+      <p>Learn 5m/15m scalping with DXY, sentiment filters, and ATR-based SL/TP.</p>
+    </div>
+    <div class="course-card">
+      <h3>Crypto Swing Trades</h3>
+      <p>Identify breakout zones using ProZone indicators and liquidity sweep logic.</p>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 OG Trading Lab. Built by Omkar Gawate. All rights reserved.</p>
+    &copy; 2025 OG Trading Lab. All rights reserved.
   </footer>
 </body>
 </html>
