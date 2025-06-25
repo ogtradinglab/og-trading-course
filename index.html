@@ -1,102 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Trading Courses by Omkar Gawate</title>
+  <meta charset="UTF-8">
+  <title>Omkar Gawate - Trading Courses</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #111;
-      color: #facc15; /* yellow */
-    }
-    header {
-      background: url('hero-bg.jpg') no-repeat center center/cover;
-      height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      color: #fff;
-    }
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 0.3em;
-    }
-    header p {
-      font-size: 1.5em;
-      margin-bottom: 1em;
-    }
-    header button {
-      padding: 12px 24px;
-      background: #facc15;
-      color: #111;
-      border: none;
-      font-size: 1.1em;
-      cursor: pointer;
-      border-radius: 6px;
-    }
-    nav {
       background-color: #000;
-      padding: 15px;
+      color: #ffd700;
+    }
+
+    header {
+      background-image: url('hero-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    header button {
+      background-color: #ffd700;
+      color: #000;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    nav {
+      background-color: #111;
+      padding: 10px 20px;
       display: flex;
       justify-content: center;
-      gap: 30px;
+    }
+
+    nav a {
+      color: #ffd700;
+      text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
     }
-    nav a {
-      color: #facc15;
-      text-decoration: none;
-    }
+
     .courses {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
       justify-content: center;
-      padding: 40px;
+      padding: 40px 20px;
+      gap: 30px;
     }
+
     .card {
-      background-color: #1e1e1e;
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      width: 300px;
       border-radius: 10px;
       overflow: hidden;
-      width: 300px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+      color: #fff;
     }
+
     .card img {
       width: 100%;
-      height: 200px;
+      height: 180px;
       object-fit: cover;
     }
+
     .card h3 {
-      padding: 20px;
-      font-size: 1.2em;
+      padding: 15px;
+      margin: 0;
+      font-size: 1.2rem;
     }
+
     .section {
-      padding: 40px;
-      text-align: center;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
     }
+
     .section h2 {
-      font-size: 2em;
+      text-align: center;
       margin-bottom: 20px;
-      color: #facc15;
+      font-size: 2rem;
     }
-    .contact-info {
-      font-size: 1.1em;
-      line-height: 2;
+
+    .contact p {
+      font-size: 1rem;
+      line-height: 1.6;
     }
+
     iframe {
       width: 100%;
-      height: 500px;
+      height: 600px;
       border: none;
-      margin-top: 30px;
     }
-    footer {
-      padding: 20px;
-      text-align: center;
-      background: #000;
-      color: #aaa;
+
+    @media(max-width: 768px) {
+      .courses {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
@@ -106,50 +119,43 @@
     <a href="#courses">Courses</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
+    <a href="#form">Join Form</a>
   </nav>
 
   <header>
-    <h1>Master Scalping Strategies</h1>
-    <p>Learn to trade with precision in Nifty & Crypto markets</p>
-    <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Join Now</button>
+    <h1>Master Trading with Omkar Gawate</h1>
+    <button onclick="document.getElementById('form').scrollIntoView({behavior: 'smooth'})">Join Now</button>
   </header>
 
   <section id="courses" class="courses">
     <div class="card">
-      <img src="nifty-scalping.png" alt="Nifty Scalping Strategy">
-      <h3>Nifty Scalping Strategy</h3>
+      <img src="nifty-scalping.png" alt="Nifty Scalping Course">
+      <h3>Nifty Option Scalping</h3>
     </div>
     <div class="card">
-      <img src="crypto-scalping.png" alt="Crypto Scalping Strategy">
-      <h3>Crypto Scalping Strategy</h3>
+      <img src="crypto-scalping.png" alt="Crypto Scalping Course">
+      <h3>Crypto Scalping Mastery</h3>
     </div>
   </section>
 
-  <section id="about" class="section">
+  <section id="about" class="section about">
     <h2>About</h2>
     <p>
-      Hi, I’m Omkar Gawate, a professional trader and strategist specializing in scalping techniques for Indian and global markets. With years of real-market experience, I’ve crafted these premium strategies to help you level up your intraday and swing trading game. My aim is to teach practical, high-accuracy systems with a strong focus on psychology, risk, and execution.
+      I'm Omkar Gawate, a passionate and full-time trader with years of experience in the Nifty, Crypto, and Forex markets. My goal is to simplify trading for every student through practical strategies that work in real-time. 
+      I specialize in scalping and high-probability setups, and I’m here to help you become a disciplined and profitable trader—no fluff, only real edge.
     </p>
   </section>
 
-  <section id="contact" class="section">
+  <section id="contact" class="section contact">
     <h2>Contact</h2>
-    <div class="contact-info">
-      📞 WhatsApp/Telegram: <strong>9225534343</strong><br>
-      📧 Email: <strong>ogtrader3434@gmail.com</strong>
-    </div>
-    
-    <h2 style="margin-top: 50px;">Apply or Inquire via Google Form</h2>
-    
-    <!-- 🔁 Replace the link below with your actual Google Form Embed -->
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfaKe-Your-Real-Form-Link/viewform?embedded=true">
-      Loading…
-    </iframe>
+    <p><strong>WhatsApp/Telegram Only:</strong> <a href="https://wa.me/919225534343" target="_blank" style="color:#ffd700;">9225534343</a></p>
+    <p><strong>Email:</strong> <a href="mailto:ogtrader3434@gmail.com" style="color:#ffd700;">ogtrader3434@gmail.com</a></p>
   </section>
 
-  <footer>
-    &copy; 2025 Omkar Gawate | All Rights Reserved
-  </footer>
+  <section id="form" class="section form">
+    <h2>Join the Program</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSekVhmmeWHJIUEYX_F7UKk_xy1Y38qqyfViaXFX_gfsTymN9Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </section>
 
 </body>
 </html>
